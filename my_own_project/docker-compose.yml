@@ -2,6 +2,7 @@ version: '3.8'
 
 volumes:
   secret_information_log:
+  pandomi_log:
 services:
   secret_information:
     image: "panda1024/secret_information:v0.2"
@@ -13,3 +14,15 @@ services:
       - 8681
     volumes:
       - 'secret_information_log:/var/log'
+
+
+  pandomi:
+    image: "panda1024/pandomi:v0.1"
+    container_name: pandomi
+    restart: always
+    ports:
+      - '28459:8089'
+    expose:
+      - 28459
+    volumes:
+      - 'pandomi_log:/var/log'
