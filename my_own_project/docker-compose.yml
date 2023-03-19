@@ -8,7 +8,7 @@ services:
     container_name: secret_information
     restart: always
     ports:
-      - '8681:8681'
+      - '8681:8088'
     expose:
       - 8681
     volumes:
