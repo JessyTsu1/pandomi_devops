@@ -18,7 +18,7 @@ services:
 
 
   pandomi:
-    image: "panda1024/pandomi:v0.2"
+    image: "panda1024/pandomi:v0.3"
     container_name: pandomi
     restart: always
     ports:
@@ -36,5 +36,5 @@ services:
       - "28458:8080"
     volumes:
       - "pandomi_random_log:/var/log"
-    image: "panda1024/pandomi-random:v0.1"
+    image: "panda1024/pandomi-random:v0.3"
     restart: always
