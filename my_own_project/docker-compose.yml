@@ -1,0 +1,15 @@
+version: '3.8'
+
+volumes:
+  secret_information_log:
+services:
+  secret_information:
+    image: "panda1024/secret_information:v0.2"
+    container_name: secret_information
+    restart: always
+    ports:
+      - '8681:8681'
+    expose:
+      - 8681
+    volumes:
+      - 'secret_information_log:/var/log'
