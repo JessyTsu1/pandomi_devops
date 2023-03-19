@@ -1,2 +1,3 @@
-# pandomi_devops
-created to improve the dev-ops of pandomi.
+# Pandomi Dev-Ops
+## Introduction
+This repo is created to improve the dev-ops of Pandomi.
