@@ -17,7 +17,7 @@ services:
 
 
   pandomi:
-    image: "panda1024/pandomi:v0.1"
+    image: "panda1024/pandomi:v0.2"
     container_name: pandomi
     restart: always
     ports:
